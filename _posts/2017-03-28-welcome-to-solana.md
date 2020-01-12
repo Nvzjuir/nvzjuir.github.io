@@ -1,3 +1,4 @@
+---
 title: Welcome to Solana
 teaser: These sample posts are provided as a template for creating your own content.
 category: intro
