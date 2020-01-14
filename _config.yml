@@ -22,7 +22,6 @@ nav_menu:
   - name: 关于我
     url: /about
     icon: /i/icons.svg#github
-    outbound: true      # this key sets a link to open in a new window.
   - name: 目录
     url: /archive
     icon: /i/icons.svg#email
