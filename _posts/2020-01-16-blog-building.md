@@ -1,0 +1,16 @@
+---
+title: 博客建站历程
+category: intro
+layout: post
+tags: [Markdown, Git, HTML]
+---
+
+# <center>——————2019年1月——————</center>
+<div class="table-title">01-16 博客上线</div>
+- 参考[逍遥风大神][1]在CSND上传的一篇文章进行搭建和上传[Git][2]
+- 本博客在[jekyll][3]主题基础上进行二次添加修改
+---
+
+[1]: https://blog.csdn.net/xhq13995711417/article/details/101032806
+[2]: https://github.com/Nvzjuir/nvzjuir.github.io
+[3]: https://github.com/rlue/jekyll-solana
