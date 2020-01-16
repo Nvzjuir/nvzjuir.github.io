@@ -1,18 +1,26 @@
 ---
-title: 博客建站历程
+title: Welcome to Solana
+teaser: These sample posts are provided as a template for creating your own content.
 category: intro
-layout: post
-tags: [Markdown, Git, HTML]
+tags: [markdown, workflow, foss]
+reddit_post: 'https://www.reddit.com/r/Jekyll/comments/6258ln/welcome_to_solana/'
+featured_comments:
+  - url: 'https://www.reddit.com/r/Jekyll/comments/6258ln/welcome_to_solana/dfkw5k2/'
 ---
 
-# <center>——————2019年1月——————</center>
-<div class="table-title">01-16 博客上线</div>
-- 参考[逍遥风大神][1]在CSND上传的一篇文章进行搭建和上传[Git][2]
-- 本博客在[jekyll][3]主题基础上进行二次添加修改
-- 本博客在[jekyll][3]主题基础上进行二次添加修改1
-11111
+GitHub Pages uses a Markdown engine called <dfn>kramdown</dfn> for formatting text posts. kramdown is a superset of Markdown, meaning:
+
+1. anything that’s valid Markdown is also valid kramdown, and
+2. it provides and strictly specifies a number of features that are not available in Markdown.[^1] 
+
+Consult the official [kramdown syntax reference][kds] for an exhaustive list of features and how to use them.
+
 ---
 
-[1]: https://blog.csdn.net/xhq13995711417/article/details/101032806
-[2]: https://github.com/Nvzjuir/nvzjuir.github.io
-[3]: https://github.com/rlue/jekyll-solana
+[^1]:
+    Such as footnotes.
+
+[kd]: http://kramdown.gettalong.org/
+[rd]: https://github.com/davidfstr/rdiscount
+[rc]: https://github.com/vmg/redcarpet
+[kds]: https://kramdown.gettalong.org/syntax.html
