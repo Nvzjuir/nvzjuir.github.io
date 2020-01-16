@@ -12,7 +12,7 @@ layout: default
   {% assign label = page.path | split: '/' | last | split: '.' | first %}
 
   {% assign pool = site.posts | where: filter, label %}
-
+  
 {% elsif page.path == 'projects.html' %}
   {% assign page_type = 'listing' %}
   {% assign item_type = 'projects' %}

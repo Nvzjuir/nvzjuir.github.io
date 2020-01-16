@@ -13,6 +13,8 @@
 {% elsif page.layout == 'listing' %}
   {% assign page_type = 'listing' %}
   {% assign title = title | append: ' | ' | append: site.title %}
+{% elsif page.path == 'archive.html' %}
+  {% assign page_type = 'listing' %}
 {% else %}
   {% assign page_type = 'destination' %}
 {% endif %}
