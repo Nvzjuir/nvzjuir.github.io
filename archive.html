@@ -1,5 +1,56 @@
 ---
 layout: listing
-title: archive
+title: 目录
 ---
 
+  {% assign page_type = 'listing' %}
+  {% assign item_type = 'posts' %}
+  {% assign filter = page.collection %}
+  {% if filter == 'tag' %}
+    {% assign filter = filter | append: 's' %}
+  {% endif %}
+  {% assign label = page.path | split: '/' | last | split: '.' | first %}
+
+  {% assign pool = site.posts | where: filter, label %}
+
+<main class="{{ item_type }} {{ item_type }}--{{ page_type }}" role="main">
+  <h2 class="{{ item_type }}__heading {{ item_type }}--{{ page_type }}__heading">{{ page.title }}</h2>
+  <ul class="info-ul">
+    {% for item in pool %}
+      <li class="info-list">
+        {% if item_type == 'posts' %}
+        {% elsif item_type == 'projects' %}
+          <span class="projects__entry-role">{{ item.role }}</span>
+        {% endif %}
+        <div class="info-title">
+          <a href="{{ site.baseurl }}{{ item.url }}"{{ outbound_link_flag }}>{{ item.title }}</a>
+          <time class="info-time" datetime="{{ item.date | date_to_xmlschema }}">
+            {{ item.date | date: "%y %b %-d" }}
+          </time>
+        {% if item.teaser %} <div class="{{ item_type }}__entry-teaser {{ item_type }}__entry-teaser--{{ page_type }}">{{ item.teaser }}</div> {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</main>
+
+{{ content }}
+<style>
+  .info-ul{
+    list-style-type: none;
+  }
+  .info-time{
+    float: right;
+    line-height: 25px;
+  }
+  .info-title a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+  }
+  .info-title{
+    /* margin-top: 20px; */
+    padding-bottom: 10px;
+    border-bottom: 1px #E1E4E8 solid;
+  }
+</style>
