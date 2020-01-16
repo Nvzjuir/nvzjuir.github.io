@@ -1,7 +1,6 @@
 ---
 title: 博客建站历程
 category: intro
-layout: post
 tags: [Markdown, Git, HTML]
 ---
 
