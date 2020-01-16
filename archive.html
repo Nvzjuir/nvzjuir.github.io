@@ -27,7 +27,6 @@ title: 目录
           <time class="info-time" datetime="{{ item.date | date_to_xmlschema }}">
             {{ item.date | date: "%y %b %-d" }}
           </time>
-        {% if item.teaser %} <div class="{{ item_type }}__entry-teaser {{ item_type }}__entry-teaser--{{ page_type }}">{{ item.teaser }}</div> {% endif %}
         </div>
       </li>
     {% endfor %}
