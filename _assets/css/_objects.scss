@@ -1,4 +1,4 @@
-%block--align-center { margin-left: auto; margin-right: auto; }
+%block--align-center { margin-right: 40rem; }
 %content--width-limit { @extend %block--align-center; max-width: 40rem; }
 %banner__wrapper {
   @include tablet-portrait-up {
