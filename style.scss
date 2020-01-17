@@ -14,7 +14,8 @@
 
 .backdrop {
   // layout
-  @extend %block--align-center;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 75rem;
   margin-bottom: 3rem;
 
@@ -113,6 +114,8 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: lowercase;
+    text-align: center;
+    margin-top: 10px;
 
     a:active { color: #fff; }
   }
@@ -153,15 +156,51 @@
   }
 }
 
+.per-info{
+  width: 300px;
+  position: absolute;
+  left: 65%;
+  margin-top: 20px;
+}
+
+.per-tags{
+  margin-top: 10px;
+  border-top: 1px #AAAAAA solid;
+}
+
+.per-tags-ul{
+  padding: 0;
+}
+
+.per-tags-li{
+  list-style: none;
+  display: inline-block;
+}
+
+.per-tags-li a{
+  color: #959DA5;
+  border: none;
+  border: 1px #959DA5 solid;
+  margin: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.per-tags-li a:hover{
+    color: #22953c;
+    border: 1px #22953c solid;
+}
+
 .nameplate--home__avatar {
   @include tablet-portrait-up {
     top: 0.5rem;
-    left: 0;
+    left: 50%;
     right: 0;
-    margin: auto;
-    width: 12rem;
-    height: 12rem;
+    width: 5rem;
+    height: 5rem;
     box-shadow: 2px 2px #444;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -596,7 +635,9 @@
 .paginator__divider { @include mobile-only { display: none; } }
 
 .post {
-  @extend %content--width-limit;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .post__head {
