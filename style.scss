@@ -157,10 +157,14 @@
 }
 
 .per-info{
-  width: 300px;
   position: absolute;
+  transform: translateY(-100%);
   left: 65%;
   margin-top: 20px;
+  @include mobile-only{
+    border: 1px solid #000;
+    left: 0;
+  }
 }
 
 .per-tags{
