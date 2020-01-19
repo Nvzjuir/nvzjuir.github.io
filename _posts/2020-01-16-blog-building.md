@@ -2,7 +2,7 @@
 title: 博客建站历程
 category: intro
 teaser: 个人博客更新过程。
-tags: [Markdown, Git, HTML, asd]
+tags: [Markdown, Git, HTML, Test]
 ---
 
 # <center>——2019年1月——</center>
