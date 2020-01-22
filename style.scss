@@ -155,7 +155,7 @@
 }
 
 .per-info{
-  @include tablet-landscape-up {
+  @include tablet-portrait-up {
     float: left;
     margin-top: 48px;
     margin-left: 6rem;
@@ -165,7 +165,7 @@
 }
 
 .per-tags{
-  @include  tablet-landscape-up{
+  @include  tablet-portrait-up{
   margin-top: 10px;
   border-top: 1px #AAAAAA solid;
   }
