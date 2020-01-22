@@ -9,7 +9,7 @@ tags: [Markdown, Git, HTML, Test]
 <div class="table-title">01-23 修改移动端界面样式</div>
 - 修复移动端样式错位。
 - 添加https。
-- 博客正式上线。1
+- 博客正式上线。
 <div class="table-title">01-18 修改界面样式</div>
 - 将个人信息改到了正右方。
 - 添加全局tag。
