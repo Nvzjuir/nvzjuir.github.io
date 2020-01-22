@@ -52,7 +52,7 @@
   @include mobile-only {
     max-width: inherit; // don't exceed body width (and pass down to shadow overlay)
     position: fixed;
-    padding: 1.5rem 0;
+    padding: 2.1rem 0;
     background-size: 120.5%;
     background-position: 0 25%;
     z-index: 1; // pull-down nav: force rest of page below shadow overlay
@@ -93,8 +93,6 @@
 
   @include mobile-only {
     float: left;
-    width: 4.5rem;
-    height: 4.5rem;
     margin-left: 1rem;
     margin-right: 0.8rem;
   }
@@ -157,21 +155,25 @@
 }
 
 .per-info{
-  tablet-landscape-up {
-    position: absolute;
-    transform: translateY(-100%);
-    left: 65%;
-    margin-top: 20px;
+  @include tablet-landscape-up {
+    float: left;
+    margin-top: 48px;
+    margin-left: 6rem;
   }
   @include mobile-only {
-    border: 1px solid #000;
-    left: 0;
   }
 }
 
 .per-tags{
+  @include  tablet-landscape-up{
   margin-top: 10px;
   border-top: 1px #AAAAAA solid;
+  }
+}
+
+.per-tags p{
+  font-weight: 700;
+  color: gray!important;
 }
 
 .per-tags-ul{
@@ -195,6 +197,12 @@
 .per-tags-li a:hover{
     color: #22953c;
     border: 1px #22953c solid;
+}
+
+.per-title{
+  @include  mobile-only{
+    display: none;
+  }
 }
 
 .nameplate--home__avatar {
@@ -451,9 +459,13 @@
 .posts--home__heading { display: none; }
 
 .posts__list {
+  @include tablet-portrait-up{
   padding-left: 0;
+  float: left;
+  width: 40rem;
+  }
 
-  @include mobile-only { margin: 0; }
+  @include mobile-only { margin: 0; padding-left: 0; }
 }
 
 .posts__entry {
